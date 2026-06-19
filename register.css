@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+}
+
+/* MAIN CARD */
+.container {
+    width: 420px;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* TITLE */
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* INPUT FIELDS */
+input {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 12px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #3b82f6;
+}
+
+
+button {
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+.success,
+.error {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 10px 0 15px 0;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+.success {
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid rgba(34, 197, 94, 0.4);
+    color: #86efac;
+}
+
+
+.error {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    color: #fca5a5;
+}
+
+
+.switch {
+    margin-top: 15px;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.switch a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+}
